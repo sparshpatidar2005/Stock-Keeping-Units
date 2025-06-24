@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url("{{ url_for('static', filename='warehouse.png') }}") no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.65);
+            padding: 50px 30px;
+            border-radius: 16px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            color: #f0ad4e;
+            margin-bottom: 25px;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        .result-value {
+            font-size: 2.5rem;
+            color: #28a745;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .overlay {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            .result-value {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Estimating Sales Prediction Using ML</h1>
+        <p>
+            The E-commerce giants use Machine Learning Models to maintain their inventory based on demand.
+            The predicted sales demand for the item is:
+        </p>
+        <div class="result-value">{{ prediction_text }}</div>
+    </div>
+</body>
+</html>

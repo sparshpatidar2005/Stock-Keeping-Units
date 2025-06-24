@@ -1,0 +1,16 @@
+## 📥 Model Download
+
+Since the model file exceeds GitHub's upload limits, you can download it from the following Google Drive link:
+
+➡️ **[Download sales_demand_forecasting.pkl](https://drive.google.com/file/d/1FuX2bxX7RB5y2LCrbNinmHfSRCX5VZ43/view?usp=sharing)**  
+
+Place the downloaded `.pkl` file inside the `flask/` directory.
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository:
+```bash
+git clone https://github.com/khwaish85/StockUnits.git
+cd StockUnits
